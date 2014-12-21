@@ -171,17 +171,6 @@ function preberiPodatke() {
                     success: function (res) {
                         console.log(res);
                         var rows = res.resultSet;
-                        /*var results = "<table class='table table-striped table-hover'><tr><th>Datum in ura</th><th class='text-right'>Telesna temperatura</th></tr>";
-                         /*if (res) {
-                         var rows = res.resultSet;
-                         for (var i in rows) {
-                         results += "<tr><td>" + rows[i].cas + "</td><td class='text-right'>" + rows[i].temperatura_vrednost + " " 	+ rows[i].temperatura_enota + "</td>";
-                         }
-                         results += "</table>";
-                         $("#rezultatMeritveVitalnihZnakov").append(results);
-                         } else {
-                         $("#preberiMeritveVitalnihZnakovSporocilo").html("<span class='obvestilo label label-warning fade-in'>Ni podatkov!</span>");
-                         }*/
                         preberiPodatke2(rows);
 
 
