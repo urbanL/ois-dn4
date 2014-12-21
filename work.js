@@ -255,7 +255,40 @@ function preberiPodatke2(data) {
 
 }
 
-function sanitizeDate(date){
+function sanitizeDate(date) {
     var i = date.indexOf("T");
     return date.substring(0, i);
+}
+
+function fill1() {
+    $("#dodajIme").val("Janez");
+    $("#dodajPriimek").val("Novak");
+    $("#dodajDatumRojstva").val("1994-05-12");
+    $("#dodajUporabnik").val("6132d321-cad3-461b-95b8-cd5662842d87");
+    $("#dodajDatum").val("2015-05-05");
+    $("#dodajTezo").val("80");
+    $("#dodajVisino").val("190");
+    $("#preberiUporabnik").val("6132d321-cad3-461b-95b8-cd5662842d87");
+}
+
+function fill2() {
+    $("#dodajIme").val("Valkoslav");
+    $("#dodajPriimek").val("Pivopivec");
+    $("#dodajDatumRojstva").val("1945-09-02");
+    $("#dodajUporabnik").val("432d5581-72e3-4d6b-88f1-3fc2a2b5d920");
+    $("#dodajDatum").val("1960-05-18");
+    $("#dodajTezo").val("70");
+    $("#dodajVisino").val("175");
+    $("#preberiUporabnik").val("432d5581-72e3-4d6b-88f1-3fc2a2b5d920");
+}
+
+function fill3() {
+    $("#dodajIme").val("Petardo");
+    $("#dodajPriimek").val("Mauriti");
+    $("#dodajDatumRojstva").val("1975-10-13");
+    $("#dodajUporabnik").val("4e900e83-d12b-42a4-b751-5202545436b2");
+    $("#dodajDatum").val("1991-06-01");
+    $("#dodajTezo").val("75");
+    $("#dodajVisino").val("190");
+    $("#preberiUporabnik").val("4e900e83-d12b-42a4-b751-5202545436b2");
 }
