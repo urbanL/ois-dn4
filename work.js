@@ -227,7 +227,7 @@ function preberiPodatke2(data) {
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
     data.forEach(function (d) {
         d.date.value = parseDate(sanitizeDate(d.date.value));
-        d.Body_weight.magnitude = +d.Body_weight.magnitude;
+        d.Body_weight.magnitude = d.Body_weight.magnitude * 10000 / (d.Body_Height_Length.magnitude * d.Body_Height_Length.magnitude);
     });
     x.domain(d3.extent(data, function (d) {
         return d.date.value;
