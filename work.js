@@ -184,6 +184,7 @@ function preberiPodatke() {
                          }*/
                         preberiPodatke2(rows);
 
+
                     },
                     error: function (err) {
                         alert("Napaka '" + JSON.parse(err.responseText).userMessage + "'!");
