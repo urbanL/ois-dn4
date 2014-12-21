@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
 
     <title>ITM Odrasli Orodoje</title>
 
@@ -40,6 +39,16 @@
                     scrollTop: $("#toGraf").offset().top
                 }, 1000)
             });
+            $("#fill3").click(function () {
+                fill3();
+            });
+            $("#fill2").click(function () {
+                fill2();
+            });
+            $("#fill1").click(function () {
+                fill1();
+            });
+
 
         });
     </script>
@@ -76,9 +85,9 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                aria-expanded="false">Dropdown <span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
+                                <li id="fill1"><a href="#">Janez Novak</a></li>
+                                <li id="fill2"><a href="#">Velkoslav Pivopivec</a></li>
+                                <li id="fill3"><a href="#">Petardo Mauriti</a></li>
                             </ul>
                         </li>
                     </ul>
